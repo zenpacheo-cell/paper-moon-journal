@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paper Moon Journal Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Nanum+Pen+Script&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#cover">Paper Moon</a>
+      <nav aria-label="Scrapbook sections">
+        <a href="#prompts">Prompts</a>
+        <a href="#pages">Pages</a>
+        <a href="#moods">Moodboard</a>
+        <a href="#supplies">Supplies</a>
+        <a href="#studio">Studio</a>
+      </nav>
+    </header>
+
+    <main id="cover">
+      <section class="hero page-spread" data-page>
+        <div class="spine" aria-hidden="true"></div>
+        <div class="paper left-page">
+          <span class="tape tape-one"></span>
+          <p class="eyebrow">volume 04 / little days</p>
+          <h1>Open the journal where small memories glow.</h1>
+          <p class="lead">A cozy digital scrapbook for prompts, paper scraps, dreamy pages, free daily supplies, and the kind of notes you keep folded in your pocket.</p>
+          <a class="start-button" href="#studio">make a page</a>
+          <div class="doodle sun" aria-hidden="true"></div>
+        </div>
+        <div class="paper right-page">
+          <div class="photo-stack lift">
+            <div class="photo photo-main">
+              <span class="corner tl"></span><span class="corner br"></span>
+              <div class="mini-scene">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <p class="caption">today felt soft</p>
+          </div>
+          <button class="sticky note-a wiggle js-fill-note" type="button">things to save:<br />sunny receipts<br />tea tags<br />ticket stubs</button>
+          <button class="sticker star js-add-sticker" type="button" data-sticker="wish">wish</button>
+          <button class="sticker flower js-add-sticker" type="button" data-sticker="bloom">bloom</button>
+        </div>
+      </section>
+
+      <section class="story prompts" id="prompts" data-page>
+        <div class="section-note reveal">
+          <p class="eyebrow">journal prompts</p>
+          <h2>Start with one tiny sentence.</h2>
+        </div>
+        <div class="prompt-collage">
+          <article class="prompt-card reveal lift js-prompt" tabindex="0" data-prompt="What did you carry today that felt like comfort?">
+            <span class="pin"></span>
+            <h3>morning pocket</h3>
+            <p>What did you carry today that felt like comfort?</p>
+          </article>
+          <article class="prompt-card reveal lift delay-1 js-prompt" tabindex="0" data-prompt="Choose one color and write the whole day through it.">
+            <span class="pin"></span>
+            <h3>color diary</h3>
+            <p>Choose one color and write the whole day through it.</p>
+          </article>
+          <article class="prompt-card reveal lift delay-2 js-prompt" tabindex="0" data-prompt="Write a note your next-season self will want to find.">
+            <span class="pin"></span>
+            <h3>future ribbon</h3>
+            <p>Write a note your next-season self will want to find.</p>
+          </article>
+        </div>
+        <div class="ripped-strip reveal">paste a little kindness here</div>
+      </section>
+
+      <section class="story feature-pages" id="pages" data-page>
+        <div class="paper-scrap scrap-title reveal">
+          <p class="eyebrow">featured pages</p>
+          <h2>Layered memories, not layouts.</h2>
+        </div>
+        <div class="gallery-grid">
+          <article class="memory-page reveal js-memory" tabindex="0" data-title="rainy window list" data-copy="Soft weather, bookstore margins, lavender tape.">
+            <span class="washi"></span>
+            <div class="page-thumb lavender"></div>
+            <h3>rainy window list</h3>
+            <p>Soft weather, bookstore margins, lavender tape.</p>
+          </article>
+          <article class="memory-page reveal delay-1 tall js-memory" tabindex="0" data-title="picnic receipts" data-copy="Pressed clover, berry stains, two tiny maps.">
+            <span class="washi sage"></span>
+            <div class="page-thumb yellow"></div>
+            <h3>picnic receipts</h3>
+            <p>Pressed clover, berry stains, two tiny maps.</p>
+          </article>
+          <article class="memory-page reveal delay-2 js-memory" tabindex="0" data-title="midnight collage" data-copy="Moon stickers and sleepy handwriting.">
+            <span class="washi blue"></span>
+            <div class="page-thumb pink"></div>
+            <h3>midnight collage</h3>
+            <p>Moon stickers and sleepy handwriting.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="story moodboard" id="moods" data-page>
+        <div class="mood-copy reveal">
+          <p class="eyebrow">mood boards</p>
+          <h2>Drag your feelings into little piles.</h2>
+          <p>Butter yellow plans, sage lists, blush letters, sky-blue afternoons, and a lavender place for thoughts that have not found words yet.</p>
+        </div>
+        <div class="mood-cluster" aria-label="Mood board collage">
+          <button class="swatch blush reveal lift js-paper-color" type="button" data-color="#f8b7c6">blush</button>
+          <button class="swatch butter reveal lift delay-1 js-paper-color" type="button" data-color="#ffe48a">butter</button>
+          <button class="swatch sage reveal lift delay-2 js-paper-color" type="button" data-color="#b8d6b0">sage</button>
+          <button class="swatch sky reveal lift js-paper-color" type="button" data-color="#a9d9f6">sky</button>
+          <button class="swatch lavender reveal lift delay-1 js-paper-color" type="button" data-color="#cdb9ef">lavender</button>
+          <div class="drawn-heart reveal" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="story collections" data-page>
+        <div class="collection-board reveal">
+          <span class="tape tape-two"></span>
+          <p class="eyebrow">memory collections</p>
+          <h2>Keep the almost-forgotten things.</h2>
+          <div class="collection-list">
+            <p contenteditable="true">01. cafe napkin poems</p>
+            <p contenteditable="true">02. songs from the bus ride</p>
+            <p contenteditable="true">03. photos with closed eyes</p>
+            <p contenteditable="true">04. tiny wins, written badly</p>
+          </div>
+        </div>
+        <div class="floating-notes" aria-hidden="true">
+          <span>remember this</span>
+          <span>soft proof</span>
+          <span>keep</span>
+        </div>
+      </section>
+
+      <section class="story shop" id="supplies" data-page>
+        <div class="shop-heading reveal">
+          <p class="eyebrow">free daily supplies</p>
+          <h2>Stationery you can use every day.</h2>
+        </div>
+        <div class="shop-shelf">
+          <article class="shop-item reveal lift js-supply" tabindex="0" data-supply="flower" data-item="daydream sticker sheet">
+            <div class="item-art stickers"></div>
+            <h3>daydream sticker sheet</h3>
+            <p>click to paste a free sticker</p>
+          </article>
+          <article class="shop-item reveal lift delay-1 js-supply" tabindex="0" data-supply="tape" data-item="washi tape trio">
+            <div class="item-art tape-roll"></div>
+            <h3>washi tape trio</h3>
+            <p>click to add free tape</p>
+          </article>
+          <article class="shop-item reveal lift delay-2 js-supply" tabindex="0" data-supply="note" data-item="pocket prompt journal">
+            <div class="item-art journal"></div>
+            <h3>pocket prompt journal</h3>
+            <p>click to add a free note</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="studio story" id="studio" data-page>
+        <div class="studio-intro reveal">
+          <p class="eyebrow">scrapbook studio</p>
+          <h2>Your own little page.</h2>
+          <p>Open the book, write, paste stickers, add recycled scraps, upload photos, drag everything around, and keep the page in this browser.</p>
+        </div>
+
+        <div class="studio-shell reveal">
+          <div class="book-stage is-closed" id="bookStage">
+            <button class="book-cover" id="bookCover" type="button" aria-label="Open scrapbook">
+              <span class="cover-elastic"></span>
+              <span class="cover-sticker">open me</span>
+              <span class="cover-title">Paper Moon<br />Scrapbook</span>
+              <span class="cover-subtitle">daily pages & saved scraps</span>
+            </button>
+            <div class="open-book" aria-label="Open scrapbook spread">
+              <div class="book-page book-page-left">
+                <p class="eyebrow">materials pocket</p>
+                <div class="pocket-card receipt-preview">receipt<br />tea + cake<br />thank you</div>
+                <div class="pocket-card kraft-preview">reused kraft paper</div>
+                <div class="pocket-card news-preview">little local news clipping</div>
+              </div>
+              <div class="scrapbook-page book-page book-page-right" id="scrapbookPage" aria-label="Editable scrapbook page">
+                <h3 id="liveTitle" contenteditable="true">today's soft archive</h3>
+                <p id="liveText" class="editable-note" contenteditable="true">Dear diary, today I want to remember...</p>
+                <div class="scrap-element tape-piece" style="left: 62%; top: 8%; rotate: 8deg;" data-type="tape" tabindex="0"></div>
+                <div class="scrap-element studio-sticker heart-piece" style="left: 12%; top: 68%;" data-type="heart" tabindex="0">love</div>
+                <div class="scrap-element studio-sticker star-piece" style="left: 72%; top: 62%;" data-type="star" tabindex="0">tiny win</div>
+              </div>
+            </div>
+            <div class="book-controls" aria-label="Scrapbook page controls">
+              <button id="prevPage" type="button">previous page</button>
+              <span id="pageIndicator">page 1 / 3</span>
+              <button id="nextPage" type="button">next page</button>
+              <button id="closeBook" type="button">close book</button>
+            </div>
+          </div>
+
+          <aside class="toolbox" aria-label="Scrapbook tools">
+            <label>
+              page title
+              <input id="pageTitle" type="text" value="today's soft archive" />
+            </label>
+            <label>
+              journal note
+              <textarea id="journalText" rows="5">Dear diary, today I want to remember...</textarea>
+            </label>
+            <div class="tool-row">
+              <button type="button" data-tool="note">note</button>
+              <button type="button" data-tool="tape">tape</button>
+              <button type="button" data-tool="heart">heart</button>
+              <button type="button" data-tool="star">star</button>
+              <button type="button" data-tool="flower">flower</button>
+              <button type="button" data-tool="sparkle">sparkle</button>
+              <button type="button" data-tool="moon">moon</button>
+              <button type="button" data-tool="bow">bow</button>
+              <button type="button" data-tool="cat">cat</button>
+              <button type="button" data-tool="dog">dog</button>
+              <button type="button" data-tool="ticket">ticket</button>
+              <button type="button" data-tool="label">label</button>
+              <button type="button" data-tool="receipt">receipt</button>
+              <button type="button" data-tool="kraft">kraft</button>
+              <button type="button" data-tool="cardboard">cardboard</button>
+              <button type="button" data-tool="newspaper">newsprint</button>
+            </div>
+            <div class="paper-palette" aria-label="Page paper colors">
+              <button type="button" data-page-paper="#fffdf3" style="--dot:#fffdf3">cream</button>
+              <button type="button" data-page-paper="#ffeef4" style="--dot:#ffeef4">blush</button>
+              <button type="button" data-page-paper="#fff4bd" style="--dot:#fff4bd">butter</button>
+              <button type="button" data-page-paper="#eef8e8" style="--dot:#eef8e8">sage</button>
+              <button type="button" data-page-paper="#eef8ff" style="--dot:#eef8ff">sky</button>
+              <button type="button" data-page-paper="#f4efff" style="--dot:#f4efff">lilac</button>
+            </div>
+            <label class="upload-button">
+              add photo
+              <input id="photoUpload" type="file" accept="image/*" />
+            </label>
+            <div class="tool-actions">
+              <button id="openBook" type="button">open book</button>
+              <button id="savePage" type="button">save page</button>
+              <button id="clearPage" type="button">clear</button>
+            </div>
+            <p class="supply-hint" aria-live="polite" id="supplyStatus">everything here is free to use</p>
+          </aside>
+
+        </div>
+      </section>
+    </main>
+
+    <dialog class="memory-dialog" id="memoryDialog">
+      <button class="dialog-close" type="button" aria-label="Close preview">x</button>
+      <p class="eyebrow">page preview</p>
+      <h2 id="dialogTitle">rainy window list</h2>
+      <p id="dialogCopy">Soft weather, bookstore margins, lavender tape.</p>
+      <button id="useMemory" type="button">use this idea</button>
+    </dialog>
+
+    <footer>
+      <p>made with paper crumbs, moonlight, and too many favorite pens</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
